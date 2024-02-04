@@ -51,6 +51,7 @@
     }
 
     .encabezadotext{
+        
         color: rgb(199, 226, 252);
         margin-left: 32%;
     }
@@ -64,9 +65,9 @@
 
 
     .cuerpo {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 2%;  
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 5%;  
         background-color: antiquewhite;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -102,7 +103,8 @@
         margin: auto;
       }
 
-      .Personajes { 
+      .Personajes {
+        margin-top: 15px;
         margin-bottom: 5%;
         grid-area: Personajes;
         border: 2px solid rgb(202, 180, 255);
@@ -114,11 +116,64 @@
       }
       
       .imagen-personaje{
+        position: absolute;
         width: 80;
         height: 80;
+
       }
       .contenedor_de_cartas{
         list-style: none;
+      }
+      .elemento{
+        position: relative;
+        padding: auto;
+        width: 24;
+        height: 24;
+      }
+      .fondo-personaje{
+        position: absolute;
+      }
+      .imagen-carta{
+        position: relative;
+      }
+
+      .link-personaje{
+        position: relative;
+        padding-left: 17px;
+        color: #267174;
+        
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .separador{
+        margin-top: 80px;
+        position: absolute;
+        padding-left: 40px;
+        padding-right: 36px;
+        background-color: #fff;
+        box-shadow: 0 1px 2px #495366;
+        border-radius: 10%;
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+        
+      }
+
+      .contenedor_de_cartas{
+        display: block;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 80px;
+        border-radius: 5px;
+      }
+
+      .contenedor_de_cartas > li{
+        width: 100px;
+        margin: 100px;
+
+     
+    
       }
 
 </style>
@@ -144,6 +199,7 @@
         <div class="registro">
             <a>REGISTRARSE</a>
         </div>
+        
     </div>
 
 
@@ -166,15 +222,45 @@
             <div class="Cartas">
                 <ul class="contenedor_de_cartas">
                     <li class="carta albedo">
+                        <span class="separador"> - </span>
                         <span class="imagen-carta">
+                            <img class="fondo-personaje" src="fondogeo.jpg" alt="fondogeo">
                             <div class="imagen-personaje"> 
-                                <a href="personaje1.html" title="Albedo"> 
+                                <a href="personaje1.html" title="Albedo">
                                     <img src="Personaje_Albedo.webp" alt="Personaje albedo">
                                 </a>
                             </div>
-                            <span class="elemento"></span>
+                            <span class="elemento">
+                                 <img src="Geo.webp" alt="Geo">
+                            </span>
                         </span>
+                        
+                        <!--<span class="link-personaje">
+                            <a href="personaje1.html" title="alberto">Albedo</a>
+                        </span>
+                        -->
                     </li>
+
+                    <li class="carta neuvillette">
+                        <span class="separador"> - </span>
+                        <span class="imagen-carta">
+                            <img class="fondo-personaje" src="fondehidro.jpg" alt="fondohidro">
+                            <div class="imagen-personaje"> 
+                                <a href="personaje2.html" title="Neuvillette">
+                                    <img src="Personaje_Neuvillette.webp" alt="Personaje Neuvillette">
+                                </a>
+                            </div>
+                            <span class="elemento">
+                                 <img src="Hydro.webp" alt="Hydro">
+                            </span>
+                        </span>
+                        
+                        <!--<span class="link-personaje">
+                            <a href="personaje1.html" title="alberto">Albedo</a>
+                        </span>
+                        -->
+                    </li>
+
                 </ul>
             </div>
         </div>
