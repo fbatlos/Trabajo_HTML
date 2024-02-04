@@ -14,51 +14,59 @@
     .encabezado{
         display: flex;
         flex-wrap: nowrap;
-        border: 2px solid antiquewhite;
-        border-radius: 10px;
         margin: 5% 10%;
        
+    }
+    
+    .registro{
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    .inicio_sesion{
+        margin-left: 25%;
     }
 
     div.registro a{
         padding: 2px 2px;
-        color: rgb(91, 158, 218);
+        color: rgb(237, 247, 255);
         width: 130px;
         height: 20px;
         text-decoration: none;
-        border: 2px solid  rgb(91, 158, 218);
+        border: 2px solid  rgb(199, 226, 252);
         border-radius: 10px;
         text-align: center;
     }
-    
+
     div.inicio_sesion a{
         padding: 2px 2px;
-        color: rgb(91, 158, 218);
+        color: rgb(237, 247, 255);
         width: 130px;
         height: 20px;
         text-decoration: none;
-        border: 2px solid rgb(91, 158, 218);
+        border: 2px solid rgb(199, 226, 252);
         border-radius: 10px;
         text-align: center;
         
     }
 
     .encabezadotext{
-        color: antiquewhite;
-        padding-left: 27%;
+        color: rgb(199, 226, 252);
+        margin-left: 32%;
     }
 
     .encabezadoimg  img{
         max-width: 150px;
         padding: 10px 10px;
         height: auto;
-        margin-right: 10px;
+        margin-right: 20%;
     }
 
 
     .cuerpo {
         margin-left: 5%;
-        margin-right: 5%;  
+        margin-right: 5%;
+        margin-bottom: 2%;  
         background-color: antiquewhite;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -75,24 +83,43 @@
       }
       
       .Banner { 
+        margin-top: 5%;
         grid-area: Banner;
         text-align: center;
+        
         }
 
       .Banner img{
-        position: relative;
         border: 5px solid rgb(202, 180, 255);
         padding: 20px 20px;
-        width: 100%;
-        height: 100%;
+        display: block;
+        width: 80%;
+        margin: auto;
+       
       } 
-      .Banner ul{
+      .Banner h1{
         list-style: none;
+        margin: auto;
       }
 
-      .Personajes { grid-area: Personajes; }
-      
+      .Personajes { 
+        margin-bottom: 5%;
+        grid-area: Personajes;
+        border: 2px solid rgb(202, 180, 255);
+        }
 
+      .Personajes h2{
+        text-align: center;
+        border-radius: 10%;
+      }
+      
+      .imagen-personaje{
+        width: 80;
+        height: 80;
+      }
+      .contenedor_de_cartas{
+        list-style: none;
+      }
 
 </style>
 
@@ -119,18 +146,37 @@
         </div>
     </div>
 
-    <div class="cuerpo">
-        <div class="Banner">
-            <ul>
-                <li>Banner actual</li>
-                <li><img src="4.1_Neuvillette_Banner.webp" ></li>
-            </ul>
-        </div>
-        
-        <div class="Personajes">
-            <ul class="contenedor_de_cartas">
 
-            </ul>
+
+
+    <div class="cuerpo">
+
+        <div class="Banner">
+            
+                <h1>Banner actual</h1>
+                <img src="4.1_Neuvillette_Banner.webp" >
+        
+        </div>
+
+        <div class="Personajes">
+            <h2 class="Personajes_titulo">
+                <span>Personajes</span>
+            </h2>
+
+            <div class="Cartas">
+                <ul class="contenedor_de_cartas">
+                    <li class="carta albedo">
+                        <span class="imagen-carta">
+                            <div class="imagen-personaje"> 
+                                <a href="personaje1.html" title="Albedo"> 
+                                    <img src="Personaje_Albedo.webp" alt="Personaje albedo">
+                                </a>
+                            </div>
+                            <span class="elemento"></span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </div>
