@@ -71,18 +71,25 @@
         background-color: antiquewhite;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
           ". Banner Banner Banner ."
           ". Banner Banner Banner ."
+          ". . text . ."
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 .";
       }
-      
+      .Personajes_titulo{
+        grid-area: text ;
+        text-align: center;
+        border-radius: 10%;
+
+      }
+
       .Banner { 
         margin-top: 5%;
         grid-area: Banner;
@@ -105,17 +112,18 @@
 
       .Personajes {
         grid-area: Personajes;
-        border: 2px solid rgb(202, 180, 255);
-        }
         
-        .Personajes2 { grid-area: Personajes2; }
+        }
 
-        .Personajes3 { grid-area: Personajes3; }
+        .Personajes2 { 
+            grid-area: Personajes2; 
+          
+        }
 
-      .Personajes h2{
-        text-align: center;
-        border-radius: 10%;
-      }
+        .Personajes3 { 
+            grid-area: Personajes3; 
+          
+        }
       
       .imagen-personaje{
         position: absolute;
@@ -218,10 +226,12 @@
         </div>
 
         <div class="Personajes">
-            <h2 class="Personajes_titulo">
-                <span>Personajes</span>
-            </h2>
-
+            <div class="Personajes_titulo" >
+                <h2 >
+                    <span>Personajes</span>
+                </h2>
+            </div>
+        
             <div class="Cartas">
                 <ul class="contenedor_de_cartas">
                     <li class="carta albedo">
@@ -331,11 +341,8 @@
 
             
         </div>
-        <div class="Personajes2">
-            <h2 class="Personajes_titulo">
-                <span>Personajes</span>
-            </h2>
 
+        <div class="Personajes2">
             <div class="Cartas">
                 <ul class="contenedor_de_cartas">
                     <li class="carta albedo">
@@ -438,15 +445,12 @@
                         -->
                     </li>
 
-
-                    </li>
                 </ul>
             </div>
+        </div>
 
             <div class="Personajes3">
-                <h2 class="Personajes_titulo">
-                    <span>Personajes</span>
-                </h2>
+                
     
                 <div class="Cartas">
                     <ul class="contenedor_de_cartas">
@@ -550,15 +554,9 @@
                             -->
                         </li>
     
-    
-                        </li>
                     </ul>
                 </div>
-    
-                
-            </div>
 
-            
         </div>
         
     </div>
