@@ -71,21 +71,22 @@
         background-color: antiquewhite;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
           ". Banner Banner Banner ."
           ". Banner Banner Banner ."
-          ". . text . ."
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 .";
       }
+
       .Personajes_titulo{
-        grid-area: text ;
-        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 10%;
 
       }
@@ -110,21 +111,24 @@
         margin: auto;
       }
 
-      .Personajes {
+        .Personajes {
         grid-area: Personajes;
+      
         
+        padding: auto;
         }
 
         .Personajes2 { 
-            grid-area: Personajes2; 
-          
+        grid-area: Personajes2; 
+      
+        padding: auto;
         }
 
         .Personajes3 { 
-            grid-area: Personajes3; 
-          
+        grid-area: Personajes3; 
+        padding: auto;
         }
-      
+    
       .imagen-personaje{
         position: absolute;
         width: 80;
@@ -133,6 +137,8 @@
       }
       .contenedor_de_cartas{
         list-style: none;
+        width: 80px;
+        border-radius: 5px;
       }
       .elemento{
         position: relative;
@@ -170,14 +176,6 @@
         
       }
 
-      .contenedor_de_cartas{
-        display: block;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        width: 80px;
-        border-radius: 5px;
-      }
-
       .contenedor_de_cartas > li{
         width: 100px;
         margin: 100px;
@@ -204,7 +202,7 @@
         </div>
         
         <div class="inicio_sesion">
-            <a>INICIAR SESIÓN</a>
+            <a href="Mantenimiento.html">INICIAR SESIÓN</a>
         </div>
     
         <div class="registro">
@@ -223,15 +221,15 @@
                 <h1>Banner actual</h1>
                 <img src="4.1_Neuvillette_Banner.webp" >
         
+                <div class="Personajes_titulo" >
+                    <h2 >
+                        <span>Personajes</span>
+                    </h2>
+                </div>
         </div>
 
+       
         <div class="Personajes">
-            <div class="Personajes_titulo" >
-                <h2 >
-                    <span>Personajes</span>
-                </h2>
-            </div>
-        
             <div class="Cartas">
                 <ul class="contenedor_de_cartas">
                     <li class="carta albedo">
