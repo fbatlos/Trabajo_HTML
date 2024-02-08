@@ -71,7 +71,7 @@
         background-color: antiquewhite;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr  1fr 1fr ;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -80,11 +80,15 @@
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 ."
           ". Personajes Personajes2 Personajes3 ."
-          ". Personajes Personajes2 Personajes3 .";
+          ". Pie Pie Pie .";
+      }
+
+      .Pie{
+        grid-area: Pie;
       }
 
       .Personajes_titulo{
-        padding-left: 5%;
+
         margin-left: auto;
         margin-right: auto;
         border-radius: 10%;
@@ -112,21 +116,20 @@
       }
 
         .Personajes {
-        grid-area: Personajes;
+            position: relative;
+            grid-area: Personajes;
       
-        
-        padding: auto;
         }
 
         .Personajes2 { 
-        grid-area: Personajes2; 
+            grid-area: Personajes2; 
+            position: relative;
       
-        padding: auto;
         }
 
         .Personajes3 { 
-        grid-area: Personajes3; 
-        padding: auto;
+            grid-area: Personajes3; 
+            position: relative;
         }
     
       .imagen-personaje{
@@ -140,6 +143,18 @@
         width: 80px;
         border-radius: 5px;
       }
+
+
+      .noticias{
+        position: relative;
+      }
+
+      .negro{
+        position: relative;
+        opacity: 0.3;
+        height: 332px;
+      }
+
       .elemento{
         position: relative;
         padding: auto;
@@ -182,8 +197,22 @@
     
       }
 
-        
+      .cartas{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .text-pie{
+        margin-left: auto;
+        margin-right: auto;
+      }
 
+     .noticias{
+        position: relative;
+     }
+     .noticia-imagen{
+        position: absolute;
+     }
 
 </style>
 
@@ -447,9 +476,7 @@
             </div>
         </div>
 
-            <div class="Personajes3">
-                
-    
+        <div class="Personajes3">
                 <div class="Cartas">
                     <ul class="contenedor_de_cartas">
                         <li class="carta albedo">
@@ -557,6 +584,23 @@
 
         </div>
         
+            
+        <div class="Pie">
+            <div class="text-pie">
+                <h3>Noticias</h3>
+            </div>
+
+            <div class="noticias">
+                <div class="noticia-imagen"> 
+                    <img src="Carta_de_personaje_Xianyun.webp" alt="Personaje new">
+                </div>
+                <span class="negro">
+                    <a href="Mantenimiento.html" title="Xianyun New"> 
+                        <img src="negro.jpg" alt="negro">
+                    </a>
+                </span>
+            </div>
+        </div>
     </div>
 
 </body>
