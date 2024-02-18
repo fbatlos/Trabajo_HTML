@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<style>
+
+html{
+    /*Colocar la imagen de fondo*/
+    background-image: url(https://w.forfun.com/fetch/f3/f34497e9ebb662c05c7dcad9a2604c43.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+fieldset{
+    /*Formato al formulario, tamoaño y posicionamiento en la pantalla*/
+    position: absolute;
+    background-color: antiquewhite;
+    width: fit-content;
+    height: 400px;
+    top: 20%;
+    left: 35%;
+    padding: 15px;
+    padding-top: 20px;
+}
+div.cabecera{
+    /*Establece la parte superior de la pagina con el nombre, el logo y los botones de inicio de sesión y registro*/
+    position: fixed;
+    display:grid;
+    grid-template-areas:
+    "Titulo Logo";
+    top: 0;
+    left: 16%;
+    width: 80%;
+    height: fit-content ;
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin-bottom: 5%;
+    padding-top: 10px;
+}
+img.Inicio{
+    /*Formato y posicionamiento de la imagne sticky que aparece abajo a la derecha en la pantalla*/
+    z-index: 1;
+    position: fixed;
+    left: 5%;
+    top: 10%;
+    margin-bottom: 0%;
+    background: transparent;
+    size: 70px;
+    border: 2px;
+    border-style: solid;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border-color: transparent;
+}
+img.Inicio:hover{
+    /*Comportamiento del botón de volver a la pantalla principal*/
+    background-color: white;
+    border-color: transparent;
+}
+</style>
+<body>
+    <div class="cabecera">
+        <div class="Titulo">
+            <!-- Título de la página -->
+            <p>TODO SOBRE Genshin Impact</p>
+        </div>
+        <div class="Logo">
+             <!-- Logo del sitio -->
+            <img src="Imagenes\genshin-impact-logo-01-en-3sep21.webp" alt="" width="fit-content" height="100px">
+        </div>
+    </div>
+    <fieldset>
+        <!-- Cuerpo de la página (formulario) -->
+        <form action="">
+            <!-- Titulo del formulario -->
+            <h3 style="text-align: center; position: relative; top: 5px;">Registrarse</h3>
+            <!-- Campo nombre y apellidos del usuario de tipo texto con requisitos de patrón, longitud y requerido-->
+            <label for="nombreYapellidos">Nombre y Apellidos </label><input type="text" name="nombreYapellidos" id="nombreYapellidos" pattern="[A-Z][a-z]{}" placeholder="Nombre y apellidos" required><br><br>
+            <!-- Campo fecha de nacimiento de tipo fecha requerido-->
+            <label for="FechaNacimiento">Fecha de Nacimiento </label><input type="date" name="FechaNacimiento" id="FechaNacimiento" required><br><br>
+            <!-- Campo correo electrónico de tipo email requerido-->
+            <label for="nombreYapellidos">Correo Electrónico </label><input type="email" name="Correo Electrónico" id="Correo Electrónico" placeholder="Correo Electrónico" required><br><br>
+            <!-- Campo nombre de usuario de tipo texto con requisitos de patrón, longitud y requerido-->
+            <label for="nombreUsuario">Nombre de Usuario </label><input type="text" name="nombreUsuario" id="nombreUsuario" pattern="[A-Z][a-z]{}" placeholder="Nombre de usuario" required><br><br>
+            <!-- Campo contraseña de tipo contraseña requerida -->
+            <label for="contraseña">Contraseña </label><input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required ><br><br>
+            <!-- Checkbox necesario de términos y condiciones -->
+            <input type="checkbox" name="terminos y condiciones" required> <label for="terminos y condiciones">He leido y acepto los términos y condiciones</label><br><br>
+            <!-- Checkbox necesario de mayoria de edad -->
+            <input type="checkbox" name="edad" required> <label for="edad">Soy mayor de 16 años</label><br><br>
+            <!-- Checkbox opcional de propaganda -->
+            <input type="checkbox" name="propaganda"> <label for="propaganda">Deseo recibir correos con las actualizaciones de esta página</label><br><br>
+            <!-- Botón de submit del formulario -->
+            <input type="submit" value="Registrarse" style="position: absolute; left: 40%; top: 90%;">
+        </form>
+    </fieldset>
+    <!-- Botón de regreso a la página principal -->
+    <a href="paginaGenshing.html"><img src="Imagenes\Inicio.png" alt="Inicio" class="Inicio" width="70px"></a>
+</body>
+</html>
