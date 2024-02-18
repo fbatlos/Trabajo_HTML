@@ -174,8 +174,7 @@ div.materiales{
 table.materialesAscension{
     /*Formato a la tabla de materiales de ascension*/
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    left: 20%;
     border-style: solid;
     border-width: 2px;
     border-color: black;

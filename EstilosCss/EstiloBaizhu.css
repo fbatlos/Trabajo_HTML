@@ -1,0 +1,242 @@
+html{
+    /*Colocar la imagen de fondo*/
+    background-image: url(https://w.forfun.com/fetch/f3/f34497e9ebb662c05c7dcad9a2604c43.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.cabecera{
+    /*Establece la parte superior de la pagina con el nombre, el logo y los botones de inicio de sesión y registro*/
+    margin: 0 auto; 
+    display: grid;
+    grid-template-areas:
+    "Titulo Logo Inicio";
+    justify-content: space-between;
+    align-items: center; 
+    width: 80%; 
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+div.Logo {
+    /*Colocar el logo en su sitio dentro de cabecera*/
+    grid-area: Logo;
+    margin-right: 100px; 
+}
+p.inicio{
+    /*Inicio son tanto el boton de inicio de sesión como el de registro. Aquí se les da sus propiedades*/
+    width: fit-content;
+    display: inline-block;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 10px; 
+    text-align: center;
+    height: fit-content;
+}
+.inicio{
+    /*Color de las letras*/
+    color: white;
+}
+p.inicio:hover {
+    /*Cambia el color de fondo de los botones ya mencionados cuando se pone el ratón encima*/
+    color: black;
+    box-shadow: inset 400px 0 0 0 lightgrey;
+}
+
+/*Parte principal*/
+div.cuerpo{
+    /*Da formato a la parte central de la página*/
+    top: 15%;
+    display: grid;
+    grid-template-areas: 
+    ".Ilustraciones."
+    ".Detalles."
+    ".Habilidades.";
+    grid-gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    padding: 15px;
+    width: 70%;
+    background-color: antiquewhite;
+}
+div.ilustraciones{
+    /*Situa las dos primeras imágenes del cuerpo*/
+    grid-area: Ilustraciones;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    border-style: solid;
+}
+.ilust{
+    /*Coloca cada imagen en su posición*/
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+div.detalles{
+    /*Coloca el div de detalles en su posición dentro del cuerpo*/
+    grid-area: Detalles;
+}
+div.intro{
+    /*Da formato a la parte de introducción al personaje*/
+    background-color: grey;
+    padding: 5px;
+    border-radius: 10px;
+}
+div.apariencia{
+    /*Formato a la parte de la apariencia del personaje*/
+    text-align: justify;
+}
+.habilidades {
+    /*Da formato al div que contiene las habilidades del personaje (flex por la sencillez)*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px; 
+    height: 300px;
+    
+  
+}
+
+.Habilidad_elemental,.Habilidad_definitiva,.Pasivo1,.Pasivo2,.Pasivo3 {
+    /*Formato a los elementos seleccionados*/
+    position: relative;
+    flex: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 0.3s ease;
+    padding: 30px;
+}
+
+.Habilidad_elemental:hover,.Habilidad_definitiva:hover,.Pasivo1:hover,.Pasivo2:hover,.Pasivo3:hover {
+    /*Transforma los elementos seleccionados*/
+    transform: translate(-50%, -50%) rotate(0deg); 
+}
+
+.Habilidad_elemental img,.Habilidad_definitiva img,.Pasivo1 img,.Pasivo2 img,.Pasivo3 img {
+    /*Formato a las imagenes que ocupan cada objeto*/
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.Habilidad_elemental .info,.Habilidad_definitiva .info,.Pasivo1 .info,.Pasivo2 .info,.Pasivo3 .info {
+    /*Formato al contenido del cuadro de texto que aparece al poner el raton encima*/
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.Habilidad_elemental:hover .info,.Habilidad_definitiva:hover .info,.Pasivo1:hover .info,.Pasivo2:hover .info,.Pasivo3:hover .info {
+    /*Ajustes al cuadro de texto*/
+    display: flex;
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    width: 200px;
+    height: fit-content;
+}
+h3{
+    /*Formato a todas las etiquetas h3*/
+    font-weight: 700;
+    font-size: x-large;
+    left: 20%;
+}
+div.materiales{
+    /*Alinea los contenidos del div materiales*/
+    justify-content: center;
+    text-align: center;
+    
+}
+table.materialesAscension{
+    /*Formato a la tabla de materiales de ascension*/
+    position: relative;
+    left: 20%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-collapse:collapse;
+    width: 600px;
+    height: 200px;
+}
+caption{
+    /*Formato al titulo de la tabla*/
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+tr,td{
+    /*Formato de las celdas y las filas de la tabla*/
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-collapse:collapse;
+    color: white;
+}
+td.verde{
+    /*Cambiar el color de fondo*/
+    background-color: rgb(66, 139, 66);
+}
+td.azul{
+    /*Cambiar el color de fondo*/
+    background-color: rgb(29, 117, 172);
+}
+td.morado{
+    /*Cambiar el color de fondo*/
+    background-color: rgb(164, 72, 164);
+}
+td.dorado{
+    /*Cambiar el color de fondo*/
+    background-color: #D4AF37;
+}
+
+table.estadisticas{
+    /*Posicionamiento de la tabla de estadisticas*/
+    position: relative;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.estadisticas th{
+    background-color: #58f047;
+    padding: 40px;
+}
+a.volver{
+    /*Posicionamiento del boton de inicio*/
+    position: sticky;
+    left: 90%;
+    z-index: 5;
+    bottom: 13%;
+}
+img.volver{
+    /*Formato de la imagen con link para volver atrás*/
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    
+}

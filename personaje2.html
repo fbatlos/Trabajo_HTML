@@ -1,10 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <!-- Se especifica la codificación del documento y la escala inicial del viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstilosCss\EstiloBaizhu.css">
+    <title>Personaje: Baizhu</title>
 </head>
 <body>
-    
+    <div class="cabecera"> 
+        <!-- Título y enlace a la página principal -->
+        <div class="Titulo">
+            <p>TODO SOBRE Genshin Impact</p>
+            <p>PÁGINA PRINCIPAL</p>
+        </div>
+        <div class="Logo">
+            <!-- Logo del sitio -->
+            <img src="Imagenes\genshin-impact-logo-01-en-3sep21.webp" alt="" width="fit-content" height="100px">
+        </div>
+        <div class="Inicio">
+            <!-- Enlaces para iniciar sesión y registrarse -->
+            <a href="InicioSesionH.html"><p class="inicio">INICIAR SESIÓN</p></a><br>
+            <a href="RegistrarseH.html"><p class="inicio">REGISTRARSE</p></a>
+        </div>
+    </div>
+     <!-- Cuerpo de la página -->
+    <div class="cuerpo">
+         <!-- Sección de ilustraciones -->
+        <div class="ilustraciones">
+            <div class="ilust">
+                <!-- Imágenes del personaje -->
+                <img src="https://static.wikia.nocookie.net/gen-impact/images/f/fc/Arte_de_personaje_Baizhu.png/revision/latest/scale-to-width/360?cb=20230522020409&path-prefix=es" alt="Carta_Baizhu"
+                height="210px" width="160px">
+            </div>
+            <div class="ilust" style="position: absolute; top: 50%; font-size: xx-large; font-weight: 700;">
+                <!-- Título del personaje -->
+                <p><b>Baizhu</b></p>
+            </div>
+            <!-- Otra imagen del personaje -->
+            <div class="ilust">
+                <img src="https://static.wikia.nocookie.net/gensin-impact/images/0/03/Icon_Emoji_Paimon%27s_Paintings_23_Baizhu_1.png/revision/latest/scale-to-width-down/250?cb=20230506194216" alt="" height="210px" width="400">
+            </div>
+        </div>
+        <!-- Detalles del personaje -->
+        <div class="detalles">
+            <!-- Introducción al personaje -->
+            <div class="intro"><p><i>El propietario de la farmacia Bubu y guardián de Qiqi, el doctor Baizhu, es un maestro de las artes medicinales y el último destinatario de un contrato generacional con una serpiente blanca llamada Changsheng. </i></p>
+            </div>
+            <!-- Descripción de la apariencia del personaje -->
+            <div class="apariencia">
+                <!-- Título y descripción de la apariencia -->
+                <h3>Apariencia</h3>
+                <p>Baizhu es un hombre alto de piel clara y cabello verde que le llega hasta los hombros. </p><br>
+                <p>Tiene ojos dorados y siempre se le ve con un par de anteojos rojos con montura ovalada.</p>
+            </div>
+            <!-- Habilidades del personaje -->
+            <h3>Habilidades</h3>
+            <!-- Contenedor de las habilidades -->
+            <div class="habilidades">
+                <!-- Cada habilidad con su respectiva descripción -->
+                <div class="Habilidad_elemental">
+                  <img src="https://static.wikia.nocookie.net/gen-impact/images/e/e7/Talento_Diagn%C3%B3stico_universal.png/revision/latest/scale-to-width-down/51?cb=20230502165554&path-prefix=es" alt="Diagnóstico universal">
+                  <div class="info">
+                        Controla a un espíritu sérico que se mueve entre los enemigos cercanos para atacarlos e infligirles Daño Dendro.Tras ejecutar un máximo de 3 ataques o cuando no haya ningún enemigo cerca, el espíritu sérico regresa y restaura Vida a todos los personajes del equipo en función de la Vida Máx. de Baizhu.
+                  </div>
+                </div>
+                <div class="Habilidad_definitiva">
+                    <img src="https://static.wikia.nocookie.net/gen-impact/images/2/2e/Talento_Sanaci%C3%B3n_hol%C3%ADstica.png/revision/latest/scale-to-width-down/51?cb=20230502165604&path-prefix=es" alt="Sanación holística">
+                    <div class="info">
+                        Baizhu, al entrar en el estado de "perspicuidad palpitante", genera un "escudo incólume" con una eficacia del 250% de absorción de Daño Dendro. Durante este estado, crea un nuevo escudo cada 2.5 segundos. Además, el escudo restaura la vida del personaje según la vida máxima de Baizhu y libera una espirituarteria que inflige Daño Dendro a los enemigos cuando se crea un nuevo escudo o cuando el escudo termina o se rompe debido al daño recibido.
+                    </div>
+                </div>
+                <div class="Pasivo1">
+                    <img src="https://static.wikia.nocookie.net/gen-impact/images/4/44/Talento_Cinco_elementos_de_la_fortuna.png/revision/latest/scale-to-width-down/51?cb=20230502165619&path-prefix=es" alt="Pasivo 1">
+                    <div class="info">
+                        Cuando la Vida de dicho personaje es inferior al 50%, Baizhu obtiene un 20% de Bono de Curación.
+                        Cuando la Vida de tu personaje en uso es superior o igual al 50%, Baizhu obtiene un 25% de Bono de Daño Dendro.
+                    </div>
+                </div>
+                <div class="Pasivo2">
+                    <img src="https://static.wikia.nocookie.net/gen-impact/images/e/e2/Talento_Madre_tierra.png/revision/latest/scale-to-width-down/51?cb=20230502165633&path-prefix=es" alt="Pasivo 2">
+                    <div class="info">
+                        El personaje que sea curado con el escudo incólume obtendrá el efecto de “fortuna de la madera”, el cual hace que, por cada 1000 pts. de Vida Máx. de Baizhu que no superen los 50000 pts., el daño que inflige dicho personaje con las reacciones de Quemadura, Florecimiento, Sobreflorecimiento y Crepitar aumenta en un 2%, y el aumento de daño generado por las reacciones de Intensificación y Propagación aumenta en un 0.8% durante 6s.
+                    </div>
+                </div>
+                <div class="Pasivo3">
+                    <img src="https://static.wikia.nocookie.net/gen-impact/images/1/1c/Talento_Nutrici%C3%B3n_vegetal.png/revision/latest/scale-to-width-down/51?cb=20230502165703&path-prefix=es" alt="Pasivo 3">
+                    <div class="info">
+                        Cuando Baizhu está en el equipo, tu personaje en uso recuperará Vida en una cantidad equivalente al 2.5% de la Vida Máx. de Baizhu al interactuar con algunos objetos recolectables.
+                    </div>
+                </div>
+            </div>
+             <!-- Materiales para mejorar las habilidades -->
+            <div class="materiales">
+                <!-- Tabla de materiales -->
+                <table class="materialesAscension">
+                    <!-- Título de la tabla -->
+                    <caption><b>Materiales para la mejora de los talentos</b></caption>
+                    <!-- Filas de la tabla con los materiales -->
+                    <tr>
+                        <td class="verde"><img src="https://static.wikia.nocookie.net/gen-impact/images/e/eb/Objeto_Espora_f%C3%BAngica.png/revision/latest/scale-to-width-down/75?cb=20220405074416&path-prefix=es" alt=""><p>Espora fúngica</p></td>
+                        <td class="azul"><img src="https://static.wikia.nocookie.net/gen-impact/images/2/28/Objeto_Polen_fluorescente.png/revision/latest/scale-to-width-down/75?cb=20220405074424&path-prefix=es" alt=""><p>Polen fluorescente</p></td>
+                        <td class="morado"><img src="https://static.wikia.nocookie.net/gen-impact/images/8/83/Objeto_Polvo_quistecristalino.png/revision/latest/scale-to-width-down/75?cb=20220405074431&path-prefix=es" alt=""><p>Polvo quistecristalino</p></td>
+                        <td rowspan="2" class="dorado"><img src="https://static.wikia.nocookie.net/gen-impact/images/8/81/Objeto_Helecho_del_para%C3%ADso_exuberante.png/revision/latest/scale-to-width-down/75?cb=20230413014052&path-prefix=es" alt=""><p>Helecho del paraíso exuberante</p></td>
+                    </tr>
+                    <tr>
+                        <td class="verde"><img src="https://static.wikia.nocookie.net/gen-impact/images/a/a5/Objeto_Ense%C3%B1anzas_del_oro.png/revision/latest/scale-to-width-down/75?cb=20220109005454&path-prefix=es" alt=""><p>Enseñanzas del oro</p></td>
+                        <td class="azul"><img src="https://static.wikia.nocookie.net/gen-impact/images/8/82/Objeto_Gu%C3%ADa_del_oro.png/revision/latest/scale-to-width-down/75?cb=20220109005506&path-prefix=es" alt=""><p>Guía del oro</p></td>
+                        <td class="morado"><img src="https://static.wikia.nocookie.net/gen-impact/images/5/53/Objeto_Filosof%C3%ADa_del_oro.png/revision/latest/scale-to-width-down/75?cb=20220109005523&path-prefix=es" alt="" ><p>Filosofía del oro</p></td>
+                    </tr>
+                </table>
+            </div><br>
+            <!-- Estadísticas del personaje -->
+            <div class="stats">
+                <h3>Estadísticas al ascender</h3>
+                 <!-- Tabla de estadísticas -->
+                <table class="estadisticas" style="text-align: center; background-color: rgb(68, 67, 67);">
+                    <tr>
+                        <th>Máx.</th>
+                        <th>Nivel</th>
+                        <th>Vida</th>
+                        <th>ATQ</th>
+                        <th>DEF</th>
+                        <th>Bono de Geo</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">20 </th>
+                        <td>1</td>
+                        <td>2 030</td>
+                        <td>10</td>
+                        <td>48</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>4 521</td>
+                        <td>21</td>
+                        <td>77</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">40 </th>
+                        <td>20+</td>
+                        <td>6 554</td>
+                        <td>38</td>
+                        <td>105</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>7 310</td>
+                        <td>41</td>
+                        <td>201</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">50</th>
+                        <td>40+</td>
+                        <td>8 340</td>
+                        <td>52</td>
+                        <td>297</td>
+                        <td>6.2%</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>9 511</td>
+                        <td>60</td>
+                        <td>356</td>
+                        <td>6.2%</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">60</th>
+                        <td>50+</td>
+                        <td>10 382</td>
+                        <td>85</td>
+                        <td>408</td>
+                        <td>15.4%</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>11 481</td>
+                        <td>103</td>
+                        <td>506</td>
+                        <td>15.4%%</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">70</th>
+                        <td>60+</td>
+                        <td>12 223</td>
+                        <td>130</td>
+                        <td>600</td>
+                        <td>15.4%</td>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td>13 112</td>
+                        <td>153</td>
+                        <td>679</td>
+                        <td>15.4%</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">80</th>
+                        <td>70+</td>
+                        <td>14 780</td>
+                        <td>205</td>
+                        <td>712</td>
+                        <td>20.5%</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>15 340</td>
+                        <td>215</td>
+                        <td>742</td>
+                        <td>20.5%</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">90/Máx</th>
+                        <td>80+</td>
+                        <td>16 570</td>
+                        <td>235</td>
+                        <td>805</td>
+                        <td>29.9%</td>
+                    </tr>
+                    <tr>
+                        <td>90/Máx</td>
+                        <td>17 777</td>
+                        <td>255</td>
+                        <td>875</td>
+                        <td>29.9%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Enlace para volver a la página anterior -->
+    <a href="paginaGenshing.html" class="volver"><img src="Imagenes\Inicio.png" alt="Inicio" class="volver"></a>
 </body>
 </html>
