@@ -1,0 +1,47 @@
+html{
+    /*Colocar la imagen de fondo*/
+    background-color: black;
+}
+div.cabecera{
+    /*Establece la parte superior de la pagina con el nombre, el logo y los botones de inicio de sesión y registro*/
+    margin: 0 auto; 
+    display: grid;
+    grid-template-areas:
+    "Titulo Logo Inicio";
+    justify-content: space-between;
+    align-items: center; 
+    width: 80%; 
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+div.Logo {
+    /*Colocar el logo en su sitio dentro de cabecera*/
+    grid-area: Logo;
+    margin-right: 100px; 
+}
+p.inicio{
+    /*Inicio son tanto el boton de inicio de sesión como el de registro. Aquí se les da sus propiedades*/
+    width: fit-content;
+    display: inline-block;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 2px;
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 10px; 
+    text-align: center;
+    height: fit-content;
+}
+.inicio{
+    /*Color de las letras*/
+    color: white;
+}
+p.inicio:hover {
+    /*Cambia el color de fondo de los botones ya mencionados cuando se pone el ratón encima*/
+    color: black;
+    box-shadow: inset 400px 0 0 0 lightgrey;
+}
