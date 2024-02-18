@@ -221,7 +221,9 @@ table.estadisticas{
     
     
 }
+
 .estadisticas th{
+    /*Color de fondo y espacio dentro de la celda*/
     background-color: #58f047;
     padding: 40px;
 }
