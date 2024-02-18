@@ -1,26 +1,31 @@
+    
     html{
+      /*Asigna la foto de fondo y hace que no se repita*/
        background-image: url(https://w.forfun.com/fetch/f3/f34497e9ebb662c05c7dcad9a2604c43.jpeg);
        background-size: cover;
        background-repeat: no-repeat; 
     }
-
+    
     .encabezado{
+      /*Asigna el espacio del encabezado*/
         display: flex;
         flex-wrap: nowrap;
-        margin: 5% 10%;
-       
+        margin: 5% 10%; 
     }
     
     .registro{
+      /*Posicion del registro*/
         margin-left: 10px;
         margin-right: auto;
     }
 
     .inicio_sesion{
+      /*Posicion del inicio de sesion*/
         margin-left: 13%;
     }
 
     div.registro a{
+      /*Le da color , borde , medidas al registro*/
         padding: 2px 2px;
         color: rgb(237, 247, 255);
         width: 130px;
@@ -32,6 +37,7 @@
     }
 
     div.inicio_sesion a{
+      /*Le da color , borde , medidas al inicio de sesion*/
         padding: 2px 2px;
         color: rgb(237, 247, 255);
         width: 130px;
@@ -44,12 +50,13 @@
     }
 
     .encabezadotext{
-        
+        /*Le da color y posicionamiento al texto del encabezado*/
         color: rgb(199, 226, 252);
         margin-left: 32%;
     }
 
     .encabezadoimg  img{
+      /*Posicion de la imagen del logo*/
         max-width: 150px;
         padding: 10px 10px;
         height: auto;
@@ -58,6 +65,7 @@
 
 
     .cuerpo {
+      /*Da formato a la parte central de la página*/
         margin-left: 8%;
         margin-right: 8%;
         margin-bottom: 5%;  
@@ -78,7 +86,7 @@
 
 
       .Personajes_titulo{
-
+        /*Posicionamiento del titulo*/
         margin-left: auto;
         margin-right: auto;
         border-radius: 10%;
@@ -86,6 +94,7 @@
       }
 
       .Banner { 
+        /*Asignacion del grid-area y centra el texto del banner*/
         margin-top: 5%;
         grid-area: Banner;
         text-align: center;
@@ -93,6 +102,7 @@
         }
 
       .Banner img{
+        /*Le da borde , dimensiones y posicionamiento a la imagen*/
         border: 5px solid rgb(202, 180, 255);
         padding: 20px 20px;
         display: block;
@@ -101,76 +111,89 @@
        
       } 
       .Banner h1{
+        /*Posiciona la lista del banner y le quita el estilo*/
         list-style: none;
         margin: auto;
       }
 
         .Personajes {
+          /*Posiciona y asigna el grid-area a los personajes*/
             position: relative;
             grid-area: Personajes;
       
         }
 
-        .Personajes2 { 
+        .Personajes2 {
+          /*Posiciona y asigna el grid-area a los personajes*/ 
             grid-area: Personajes2; 
             position: relative;
       
         }
 
         .Personajes3 { 
+          /*Posiciona y asigna el grid-area a los personajes*/
             grid-area: Personajes3; 
             position: relative;
         }
     
       .imagen-personaje{
+        /*Asigna la posicion y las medidas de la imagen del personaje */
         position: absolute;
         width: 80;
         height: 80;
 
       }
       .contenedor_de_cartas{
+        /*Le quita el estilo de la lista , le da medida y redondea los bordes*/
         list-style: none;
         width: 80px;
         border-radius: 5px;
       }
 
       .Pie{
+        /*Asigna el grid-area a Pie*/
         grid-area: Pie;
       }
 
       .noticias{
+        /*Posiciona las noticias */
         position: relative;
       }
 
       .negro{
+        /*Posiciona una malla oscura a las noticias como un efecto*/
         position: relative;
         opacity: 0.3;
         height: 332px;
       }
 
       .elemento{
+        /*Posiciona el elemento encima de la imagen , le da dimensiones y medidas*/
         position: relative;
         padding: auto;
         width: 24;
         height: 24;
       }
       .fondo-personaje{
+        /*Posiciona el fondo como absoluto*/
         position: absolute;
       }
       .imagen-carta{
+        /*Posiciona la imagen por encima del fondo*/
         position: relative;
       }
 
       .link-personaje{
+        /*Posiciona el link de cada personaje , lo centra y le quita el efecto de enlace*/
         position: relative;
         padding-left: 17px;
         color: #267174;
-        
         text-decoration: none;
         text-align: center;
       }
 
       .separador{
+        /*Posiciona el separador, lo dimensiona , le da color , sombrea y lo centra*/
         margin-top: 80px;
         position: absolute;
         padding-left: 40px;
@@ -185,21 +208,24 @@
       }
 
       .contenedor_de_cartas > li{
+        /*Dimensiona y le da medidas*/
         width: 100px;
         margin: 100px;
-    
       }
 
       .cartas{
+        /*Dimensiona al centro cada carta*/
         margin-left: auto;
         margin-right: auto;
       }
     
       .text-pie{
+        /*Dimensiona el texto al centro*/
         margin-left: auto;
         margin-right: auto;
       }
 
      .noticia-imagen{
+      /*Posiciona la imagen de la noticia como absoluta*/
         position: absolute;
      }
