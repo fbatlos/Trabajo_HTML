@@ -1,0 +1,205 @@
+    html{
+       background-image: url(https://w.forfun.com/fetch/f3/f34497e9ebb662c05c7dcad9a2604c43.jpeg);
+       background-size: cover;
+       background-repeat: no-repeat; 
+    }
+
+    .encabezado{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 5% 10%;
+       
+    }
+    
+    .registro{
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    .inicio_sesion{
+        margin-left: 13%;
+    }
+
+    div.registro a{
+        padding: 2px 2px;
+        color: rgb(237, 247, 255);
+        width: 130px;
+        height: 20px;
+        text-decoration: none;
+        border: 2px solid  rgb(199, 226, 252);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    div.inicio_sesion a{
+        padding: 2px 2px;
+        color: rgb(237, 247, 255);
+        width: 130px;
+        height: 20px;
+        text-decoration: none;
+        border: 2px solid rgb(199, 226, 252);
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+
+    .encabezadotext{
+        
+        color: rgb(199, 226, 252);
+        margin-left: 32%;
+    }
+
+    .encabezadoimg  img{
+        max-width: 150px;
+        padding: 10px 10px;
+        height: auto;
+        margin-right: 20%;
+    }
+
+
+    .cuerpo {
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 5%;  
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr  1fr 1fr ;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". Banner Banner Banner ."
+          ". Banner Banner Banner ."
+          ". Personajes Personajes2 Personajes3 ."
+          ". Personajes Personajes2 Personajes3 ."
+          ". Personajes Personajes2 Personajes3 ."
+          ". Pie Pie Pie .";
+      }
+
+
+      .Personajes_titulo{
+
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10%;
+
+      }
+
+      .Banner { 
+        margin-top: 5%;
+        grid-area: Banner;
+        text-align: center;
+        
+        }
+
+      .Banner img{
+        border: 5px solid rgb(202, 180, 255);
+        padding: 20px 20px;
+        display: block;
+        width: 80%;
+        margin: auto;
+       
+      } 
+      .Banner h1{
+        list-style: none;
+        margin: auto;
+      }
+
+        .Personajes {
+            position: relative;
+            grid-area: Personajes;
+      
+        }
+
+        .Personajes2 { 
+            grid-area: Personajes2; 
+            position: relative;
+      
+        }
+
+        .Personajes3 { 
+            grid-area: Personajes3; 
+            position: relative;
+        }
+    
+      .imagen-personaje{
+        position: absolute;
+        width: 80;
+        height: 80;
+
+      }
+      .contenedor_de_cartas{
+        list-style: none;
+        width: 80px;
+        border-radius: 5px;
+      }
+
+      .Pie{
+        grid-area: Pie;
+      }
+
+      .noticias{
+        position: relative;
+      }
+
+      .negro{
+        position: relative;
+        opacity: 0.3;
+        height: 332px;
+      }
+
+      .elemento{
+        position: relative;
+        padding: auto;
+        width: 24;
+        height: 24;
+      }
+      .fondo-personaje{
+        position: absolute;
+      }
+      .imagen-carta{
+        position: relative;
+      }
+
+      .link-personaje{
+        position: relative;
+        padding-left: 17px;
+        color: #267174;
+        
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .separador{
+        margin-top: 80px;
+        position: absolute;
+        padding-left: 40px;
+        padding-right: 36px;
+        background-color: #fff;
+        box-shadow: 0 1px 2px #495366;
+        border-radius: 10%;
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+        
+      }
+
+      .contenedor_de_cartas > li{
+        width: 100px;
+        margin: 100px;
+    
+      }
+
+      .cartas{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .text-pie{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+     .noticia-imagen{
+        position: absolute;
+     }
